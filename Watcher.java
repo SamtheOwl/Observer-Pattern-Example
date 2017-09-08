@@ -27,7 +27,11 @@ public class Watcher
 	public void getMessage(List <String> inputList)
 	{
 		this.tempListOfMessages = inputList;
-		
+	}
+	
+	//This method also transfers the messages from the temp list to the main list then clears the temp list.
+	public void showMessage()
+	{
 		for(String tempMessage : tempListOfMessages)
 		{
 			System.out.print("");
