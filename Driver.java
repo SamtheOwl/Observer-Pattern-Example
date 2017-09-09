@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,29 @@ public class Driver
 	
 	public static void main(String [] args)
 	{
+		//Creating stations and watchers to test
+		int numOfStations; numOfWatchers;
 		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("How many broadcast station do you want to create for this test?");
+		numOfStations = input.nextInt();
+		
+		System.out.println("How many watchers do you want to create for this test?");
+		numOfWatchers = input.nextInt();
+		
+		for(int i = 0; i < numOfStations; i++)
+		{
+			BroadcastStation createStation = new BroadcastStation("Broadcast Station " + (i + 1));
+			listOfStations.add(createStation);
+		}
+		
+		for(int i = 0; i < numOfWatchers; i++)
+		{
+			Watcher createWatcher = new Watcher("Watcher " + (i + 1));
+			listOfWatchers.add(createWatcher);
+		}
+		
+		//Introduce the stations and watchers
 	}
 }
