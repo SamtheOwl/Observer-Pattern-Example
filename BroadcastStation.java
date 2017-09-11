@@ -37,6 +37,11 @@ public class BroadcastStation
 			System.out.println("Currently there is noone to broadcast to.");
 		}
 		
+		if(listOfMessages.size() < 1)
+		{
+			System.out.println("Currently there is no message to broadcast.");
+		}
+		
 		else
 		{
 			int count = 0;
